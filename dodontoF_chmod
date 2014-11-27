@@ -1,0 +1,20 @@
+# dodontoFを展開してできる、DodontoF_WebSetフォルダの直下にこれを置く
+# （つまり、同じフォルダにsaveDataフォルダとpublic_htmlフォルダがあるようにする）
+# chmod u+xで実行権限を与えて実行すれば、まとめて必要な権限を追加するよ！
+
+chmod 705 saveData
+cd public_html
+chmod 705 DodontoF 
+chmod 705 imageUploadSpace
+cd DodontoF
+chmod 705 DodontoFServer.rb
+chmod 600 log.txt
+chmod 600 log.txt.0
+chmod 705 saveDataTempSpace
+chmod 705 fileUploadSpace
+chmod 705 replayDataUploadSpace
+cd ../imageUploadSpace
+chmod 705 smallImages
+
+
+
